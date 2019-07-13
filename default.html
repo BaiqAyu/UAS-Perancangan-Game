@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html manifest="platformer.cache">
+
+<head>
+    <title>Locat Sana Loncat Sini</title>
+    <link rel="shortcut icon" href="./icons/favicon.ico" />
+    <meta name="viewport" content="width=device-width; height=device-height; initial-scale=1.0; maximum-scale=1.0;" />
+    <meta name="msapplication-task" content="name=XNA 4.0 Platformer Sample;action-uri=http://create.msdn.com/en-US/education/catalog/sample/platformer;icon-uri=./icons/XNA.ico" />
+    <meta name="msapplication-task" content="name=Tutorial: Animating sprites in Canvas with EaselJS;action-uri=http://blogs.msdn.com/b/davrous/archive/2011/07/21/html5-gaming-animating-sprites-in-canvas-with-easeljs.aspx;icon-uri=./icons/blogicon.ico" />
+    <meta name="msapplication-task" content="name=Tutorial: Building the core objects & handling collisions with EaselJS;action-uri=http://blogs.msdn.com/b/davrous/archive/2011/07/29/html5-gaming-building-the-core-objects-amp-handling-collisions-with-easeljs.aspx;icon-uri=./icons/blogicon.ico" />
+    <meta name="msapplication-task" content="name=Build my pinned site;action-uri=http://buildmypinnedsite.com;icon-uri=./icons/mypinnedsites.ico" />
+    <link href="modernplatformer.css" rel="stylesheet">
+
+    <script src="./src/ModernizrCSS3.js"></script>
+
+    <script>
+        createjs = window;
+    </script>
+
+    <script src="./src/hand.minified-1.2.js"></script>
+    <script src="./src/Vector2.js"></script>
+    <script src="./src/easeljs/easeljs-0.5.0.min.js"></script>
+    <script src="./src/easeljs/XNARectangle.js"></script>
+    <script src="./src/easeljs/PlatformerHelper.js"></script>
+    <script src="./src/easeljs/ContentManager.js"></script>
+    <script src="./src/easeljs/Tile.js"></script>
+    <script src="./src/easeljs/Yellow.js"></script>
+    <script src="./src/easeljs/Gem.js"></script>
+    <script src="./src/easeljs/Enemy.js"></script>
+    <script src="./src/easeljs/Player.js"></script>
+    <script src="./src/easeljs/Level.js"></script>
+    <script src="./src/easeljs/PlatformerGame.js"></script>
+    <script src="./src/dragDropLogic.js"></script>
+    <script src="./src/main.js"></script>
+</head>
+<body onload="initGameLogic();">
+    <div class="canvasHolder">
+        <canvas id="platformerCanvas" width="800" height="480" class="initialRotation">
+        </canvas>
+        <canvas id="JoystickCanvas" width="800" height="480">
+        </canvas>
+    </div>
+</body>
+</html>

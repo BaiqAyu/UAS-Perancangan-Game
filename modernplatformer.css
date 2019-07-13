@@ -1,0 +1,89 @@
+﻿* {
+    -webkit-touch-callout: none; 
+    -webkit-text-size-adjust: none; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.canvasHolder {
+    width: 100%;
+    height: 100%;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    touch-action: none;
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#JoystickCanvas {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column-align: center;
+    -ms-grid-row-align: center;
+    transform: scale(1);
+}
+
+#platformerCanvas {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column-align: center;
+    -ms-grid-row-align: center;
+    -ms-transition-property: all;
+    -ms-transition-duration: 1s;
+    -ms-transition-timing-function: ease;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: ease;
+    -o-transition-property: all;
+    -o-transition-duration: 1s;
+    -o-transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: 1s;
+    -ms-backface-visibility: visible;
+    -ms-transform-origin: 70% 70%;
+    -webkit-backface-visibility: visible;
+    -webkit-transform-origin-x: 70%;
+    -webkit-transform-origin-y: 70%;
+    -moz-backface-visibility: visible;
+    -moz-transform-origin: 70% 70%;
+    backface-visibility: visible;
+    transform-origin: 70% 70%;
+}
+
+.moveRotation {
+    -ms-transform: perspective(800px) rotateY(90deg) scale(0.1);
+    -webkit-transform: perspective(800px) rotateY(90deg) scale(0.1);
+    -moz-transform: perspective(800px) rotateY(90deg) scale(0.1);
+    -o-transform: scale(0);
+}
+
+.initialRotation {
+    -ms-transform: perspective(800px) rotateY(0deg) scale(1);
+    -webkit-transform: perspective(800px) rotateY(0deg) scale(1);
+    -moz-transform: perspective(800px) rotateY(0deg) scale(1);
+    -o-transform: scale(1);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow:flex;
+    margin: 0;
+    padding: 0;
+    background-color: white
+}
