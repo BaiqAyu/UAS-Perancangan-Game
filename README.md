@@ -1,2 +1,2 @@
-# UAS-Perancangan-Game
+# UAS/Perancangan-Game-LSLS
 UAS MK Perancangan Game 
